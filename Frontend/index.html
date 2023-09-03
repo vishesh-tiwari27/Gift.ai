@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vicky Gift Store</title>
+    
+<style>
+    
+    
+    
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+      background-color:;
+    }
+    
+    
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: darkorchid;
+    color: white;
+  }
+    
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+    
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+    
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+      color: white;
+  }
+    
+  nav {
+    display: flex;
+    align-items: center;
+      color: white;
+  }
+    
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: white;
+  }
+    
+  nav ul li {
+    margin-right: 20px;
+      color: white;
+  }
+     nav ul li a {
+    margin-right: 20px;
+      color: white;
+         text-decoration: none; 
+  }
+    
+  .search-bar {
+    margin-right: 20px;
+    
+  }
+
+.video-container {
+    position: relative;
+    width: 50%;
+    height: 50vh;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-left: 850px;
+}
+
+#video-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the video covers the entire container */
+    z-index: -1; /* Place the video behind the content */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Place the content above the video */
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+    
+    h1{
+        
+        margin-left: 80px;
+        margin-top: -250px;
+    }
+    h2{
+        margin-left: 80px;
+    }
+    
+    button#openModalBtn {
+    padding: 10px 20px;
+    background-color: darkorchid;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 30%;
+    top: 15%;
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    padding: 20px;
+    border: 5px;
+    border-color: darkorchid;
+    border-style: solid;
+    border-width: medium;
+    
+}
+    .modal-content {
+    margin: auto;
+        color: darkorchid;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    color: darkorchid;
+}
+    input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: darkorchid;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: darkorchid;
+}
+    .Easysteps h1{
+        margin-top: 290px;
+        padding-top: 10px;
+    }
+    .Easysteps {
+        background-color: darkorchid;
+        color: white;
+    }
+    .step1{
+        margin-top:10px;
+        background-color: darkorchid;
+        color: white;
+        
+    }
+    .step1 h1{
+        margin-top: -21px;
+        padding-top: 25px;
+        margin-left: 250px;
+    
+    }
+    .step1 p{
+        font-size: 35px;
+        margin-left: 150px;
+        margin-top: 0px;
+        padding-bottom: 10px;
+        
+    }
+    .step2 {
+        margin-top: 5px;
+        background-color: darkorchid;
+        color: white;
+    }
+    .step2 h1{
+        margin-top: -155px;
+        padding-top: 10px;
+        margin-left: 750px;
+    }
+    .step2 p{
+        font-size: 35px;
+        margin-top: 3px;
+        margin-left: 700px;
+        padding-bottom: 10px;
+
+    }
+    .step3{
+        margin-top: -100px;
+        background-color: darkorchid;
+        color: white;
+    }
+    .step3 h1{
+        margin-top: -160px;
+        padding-top: 10px;
+        margin-left: 1200px;
+    }
+    .step3 p{
+        font-size: 35px;
+        margin-left: 1100px;
+        margin-top: 30px;
+    }
+    
+    
+   /* .step1{
+        
+        margin-top: -210px;
+    }*/ 
+    
+    p{
+        margin-left: 450px;
+        font-size: 50px;
+    }
+    .Image{
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .Image2{
+        margin-left: 20px;
+        margin-top: 300px;
+        background-color: lightgreen;
+    }
+    .btn{
+        margin-left: 400px;
+        margin-top: 30px;
+        
+    }
+    /*.card {
+            margin-bottom: 20px;
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }*/
+    
+  
+   /* .Popular{
+        background-image: url(coding/popular.png);
+        background-repeat: no-repeat;
+        background-size: 300px;
+    }
+    .Discount{
+        background-image: url(coding/discount.png);
+        background-repeat: no-repeat;
+        background-size: 300px ;
+    }*/
+    
+    .Image2 h2{
+        margin-left: 200px;
+        
+    }
+    
+      @media screen and (max-width: 1200px) {
+            /* Styles for screens with a maximum width of 500px */
+          
+         /* .logo img{
+               width: 30px;
+               height: 40px;
+               margin-left: -10px; 
+          }
+           .logo h1 {
+               margin-left: -8px;
+               font-size: 25px;
+          }
+          .search-bar {
+              margin-right: 80px;
+              padding: 0px;
+              margin-bottom: 1px;
+              
+              
+    
+          }
+          
+          nav ul {
+              flex-direction: column;
+          }
+          
+          nav ul li a{
+              margin-right: -10px;
+          }*/
+          
+           h1{
+        
+             margin-left: 20px;
+             margin-top: -500px;
+         }
+           h2{
+            margin-left: 20px;
+               font-weight: 50px;
+         }
+          .video-container{
+              margin-left: 400px;
+              margin-top: 185px;
+          }
+          
+           button#openModalBtn {
+            margin-left: 135px;
+             margin-top: 250px;
+          }
+          .Easysteps{
+              margin-top: -150px;
+          }
+          .step1 h1{
+              margin-left: 400px;
+              
+          }
+          .step1 p{ 
+        margin-left: 260px;
+          }
+          
+          .step2 h1{
+              margin-left: 400px;
+              margin-top: -35px;
+          }
+          .step2 p{
+              margin-left: 340px;
+             
+          }
+          .step3 h1{
+              margin-left: 400px;
+              margin-top: 95px;
+          }
+          .step3 p{
+              margin-left: 300px;
+             
+          }
+          
+          
+    }
+    
+      @media screen and (max-width: 600px) {
+            /* Styles for screens with a maximum width of 500px */
+          
+          .logo img{
+               width: 30px;
+               height: 40px;
+               margin-left: -10px; 
+          }
+           .logo h1 {
+               margin-left: -8px;
+               font-size: 25px;
+          }
+          .search-bar {
+              margin-right: 80px;
+              padding: 0px;
+              margin-bottom: 1px;
+              
+              
+    
+          }
+          
+          nav ul {
+              flex-direction: column;
+          }
+          
+          nav ul li a{
+              margin-right: -10px;
+          }
+          
+           h1{
+        
+             margin-left: 20px;
+             margin-top: -500px;
+         }
+           h2{
+            margin-left: 20px;
+               font-weight: 50px;
+         }
+          .video-container{
+              margin-left: 120px;
+              margin-top: 185px;
+          }
+          .burger{
+              : hidden;
+          }
+          
+           button#openModalBtn {
+            margin-left: 135px;
+             margin-top: 320px;
+          }
+          .Easysteps{
+              margin-top: -250px;
+          }
+          .step1 h1{
+              margin-left: 200px;
+              
+          }
+          .step1 p{ 
+        margin-left: 80px;
+          }
+          
+          .step2 h1{
+              margin-left: 200px;
+              margin-top: -35px;
+          }
+          .step2 p{
+              margin-left: 130px;
+             
+          }
+          .step3 h1{
+              margin-left: 200px;
+              margin-top: 95px;
+          }
+          .step3 p{
+              margin-left: 110px;
+             
+          }
+          
+          
+    }
+    
+    
+    
+    
+    </style>
+    
+</head>
+    
+<body>
+  <header>
+    <div class="logo">
+      <img src="coding/logo.png" alt="Logo">
+      <h1>Gift.AI</h1>
+    </div>
+    <nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+      <ul>
+        <li>  <a href="#">Home </a></li> 
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact Us</a></li>
+          <li><a href="#">WishList</a></li>
+      </ul>
+    </nav>
+  </header> 
+    
+    <div class="video-container">
+        <video autoplay muted loop id="video-background">
+            <source src="coding/animation3.mp4" type="video/mp4">
+            <!-- Add additional <source> elements for different video formats if needed -->
+        </video>
+        <div class="content">
+            <!-- Your content goes here -->
+            <!--<h3>Welcome to Vicky Gift Shop</h3>-->
+        </div>
+    </div>
+    
+     <h1> Surprise your Loved ones with best Gifts.</h1>
+    <h2>We can suggest you Great Gifts with help of AI.</h2>
+    
+    <button class="btn "id="openModalBtn">Get AI Recommendation</button>
+    
+    
+    <div class="Easysteps" id="easysteps">
+    <h1> 3 Easy Steps to get AI recommendation.</h1>  
+    </div>
+    
+    <div class="step1" id="one">
+        <h1>Step-1</h1> 
+        <p>Let us know your choice.</p>
+    </div>
+    
+     <div class="step2" id="two">
+        <h1>Step-2</h1> 
+        <p>Fill the details.</p>
+    </div>
+    
+     <div class="step3" id="three">
+        <h1>Step-3</h1> 
+        <p>Get recommendation.</p>
+    </div>
+    
+   <!--<div class="Image">
+    <img src="coding/giftbox.jpg", width="300px", height="250px";>
+        <br><br><br><br>
+    </div>-->
+    
+   
+
+   <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+              <div class="logo">
+      <img src="coding/logo.png" alt="Logo">
+      <h1>Gift.ai</h1>
+    </div>
+            <h2>Gift Recommendation Form</h2>
+            <form id="giftForm">
+                <label for="relation">Relation:</label>
+                <select id="dropdowm">
+                     <option value="option1">WIFE</option>
+                     <option value="option2">SISTER</option>
+                     <option value="option3">BROTHER</option>
+                     <option value="option4">DAD</option>
+                     <option value="option5">MOM</option>
+                </select>
+                <br>
+               <!-- <input type="text" id="inputField" placeholder="Select Relation" required>-->
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                                                        
+                <label for="budget">Budget:</label>
+                <input type="text" id="budget" name="budget" required>
+
+            <!--  <label for="giftType">Gift Type:</label>
+                <input type="text" id="giftType" name="giftType" required>-->
+
+                <label for="occasion">Occasion:</label>
+                <input type="text" id="occasion" name="occasion" required>
+
+                <button type="submit" id="newPage">Submit</button>
+            </form>
+        </div>
+    </div>   
+    
+    
+   <!--  <div class="Image2">
+    <img src="coding/giftboxes.jpg", width="300px", height="250px";>
+     <div class="step1">
+     <div class="step-content">
+      <h2>Step 1: Let us know your choice.</h2>
+         <p>|</p>
+    </div>
+  </div>
+    
+  <div class="step2">
+    <div class="step-content">
+      <h2>Step 2: Check our AI Gift recommendations.</h2>
+        <p>|</p>
+    </div>
+  </div>
+    
+  <div class="step3">
+    <div class="step-content">
+      <h2>Step 3: Get your Gift deleviry.</h2>
+    </div>
+  </div>
+    </div>-->
+    
+   <!-- <div class="Popular">
+    <button type="button" id="PopularGifts">Popular Gifts</button>
+    
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    
+    <div class="Discount">
+    <button type="button" id="DiscountGifts">Discount Gifts</button>
+    
+    </div>
+    
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>-->
+    
+    
+    
+    
+    </body>
+    
+    <script src="vicky.js"></script>
+    
+</html>

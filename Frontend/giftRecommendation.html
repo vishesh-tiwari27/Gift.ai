@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Recommendations</title>
+</head>
+    
+    <style>
+        
+         header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: darkorchid;
+    color: white;
+  }
+    
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+    
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+    
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+    
+  nav {
+    display: flex;
+    align-items: center;
+      color: white;
+  }
+    
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: white;
+  }
+    
+  nav ul li {
+    margin-right: 20px;
+      color: white;
+  }
+     nav ul li a {
+    margin-right: 20px;
+      color: white;
+         text-decoration: none; 
+  }
+    
+  .search-bar {
+    margin-right: 20px;
+    
+  }
+        
+         /* Product Card Container */
+    .gift1{
+        
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin: 10px;
+    width: 420px;
+        height: 300px;
+    background-color: darkorchid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+        margin-left: 250px;
+        margin-top: 50px;
+        
+
+    }
+    
+    .gift1:hover {
+    transform: scale(1.05);
+}
+
+/* Product Card Image */
+.gift1 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Product Card Title */
+.gift1 h3{
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Product Card Price */
+.gift1 label {
+    font-weight: bold;
+    color: #090909;
+    }
+    
+     .gift3{
+        
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin: 10px;
+    width: 420px;
+        height: 300px;
+    background-color: darkorchid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+         margin-left: 250px;
+         margin-top: 50px;
+        
+
+    }
+    
+    .gift3:hover {
+    transform: scale(1.05);
+}
+
+/* Product Card Image */
+.gift3 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Product Card Title */
+.gift3 h3{
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Product Card Price */
+.gift3 label {
+    font-weight: bold;
+    color: #090909;
+    }
+    
+     .gift2{
+        
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin: 10px;
+    width: 420px;
+        height: 300px;
+    background-color: darkorchid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+         margin-left: 800px;
+         margin-top: -390px;
+        
+
+    }
+    
+    .gift2:hover {
+    transform: scale(1.05);
+}
+
+/* Product Card Image */
+.gift2 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Product Card Title */
+.gift2 h3{
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Product Card Price */
+.gift2 label {
+    font-weight: bold;
+    color: #090909;
+    }
+    
+     .gift4{
+        
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin: 10px;
+    width: 420px;
+        height: 300px;
+    background-color: darkorchid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+         margin-left: 800px;
+         margin-top: -390px;
+
+    }
+    
+    .gift4:hover {
+    transform: scale(1.05);
+}
+
+/* Product Card Image */
+.gift4 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Product Card Title */
+.gift4 h3{
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Product Card Price */
+.gift4 label {
+    font-weight: bold;
+    color: #090909;
+    }
+    
+     .gift5{
+        
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin: 10px;
+    width: 420px;
+        height: 400px;
+    background-color: darkorchid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+         margin-left: 250px;
+         margin-top: 50px;
+        
+
+    }
+    
+    .gift5:hover {
+    transform: scale(1.05);
+}
+
+/* Product Card Image */
+.gift5 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Product Card Title */
+.gift5 h3{
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Product Card Price */
+.gift5 label {
+    font-weight: bold;
+    color: #090909;
+    }
+    
+     .gift6{
+        
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin: 10px;
+    width: 420px;
+        height: 300px;
+    background-color: darkorchid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+          margin-left: 800px;
+         margin-top: -410px;
+        
+
+    }
+    
+    .gift6:hover {
+    transform: scale(1.05);
+}
+
+/* Product Card Image */
+.gift6 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Product Card Title */
+.gift6 h3{
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Product Card Price */
+.gift6 label {
+    font-weight: bold;
+    color: #090909;
+    }
+    
+    /* Reset some default styles to start with a clean slate */
+body, h1, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Style the container for gift cards */
+.detailscontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style individual gift cards */
+.card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-text {
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Style the "Buy Now" button */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}  
+        
+           @media screen and (max-width: 1200px) {
+            /* Styles for screens with a maximum width of 500px */
+          
+         /* .logo img{
+               width: 30px;
+               height: 40px;
+               margin-left: -10px; 
+          }
+           .logo h1 {
+               margin-left: -8px;
+               font-size: 25px;
+          }
+          .search-bar {
+              margin-right: 80px;
+              padding: 0px;
+              margin-bottom: 1px;
+              
+              
+    
+          }
+          
+          nav ul {
+              flex-direction: column;
+          }
+          
+          nav ul li a{
+              margin-right: -10px;
+          }*/
+      
+          .gift1{
+              margin-left: 100px;
+              width: 250px;
+              
+          }
+       .gift2{
+              margin-left: 600px;
+              width: 250px;
+              
+          } .gift3{
+              margin-left: 100px;
+              width: 250px;
+              
+          } .gift4{
+              margin-left: 600px;
+              width: 250px;
+              
+          } .gift5{
+              margin-left: 100px;
+              width: 250px;
+              
+          } .gift6{
+              margin-left: 600px;
+              width: 250px;
+              
+          }
+         
+      
+        }
+
+  @media screen and (max-width: 800px) {
+            /* Styles for screens with a maximum width of 500px */
+          
+          .logo img{
+               width: 30px;
+               height: 40px;
+               margin-left: -10px; 
+          }
+           .logo h1 {
+               margin-left: -8px;
+               font-size: 25px;
+          }
+          .search-bar {
+              margin-right: 80px;
+              padding: 0px;
+              margin-bottom: 1px;
+              
+              
+    
+          }
+          
+          nav ul {
+              flex-direction: column;
+          }
+          
+          nav ul li a{
+              margin-right: -10px;
+          }
+      
+          .gift1{
+              margin-left: 100px;
+              width: 250px;
+              
+          }
+       .gift2{
+              margin-left: 100px;
+              width: 250px;
+           margin-top: 0px;
+              
+          } .gift3{
+              margin-left: 100px;
+              width: 250px;
+              
+          } .gift4{
+              margin-left: 100px;
+              width: 250px;
+              margin-top: 0px;
+              
+          } .gift5{
+              margin-left: 100px;
+              width: 250px;
+              
+          } .gift6{
+              margin-left: 100px;
+              width: 250px;
+              margin-top: 0px;
+              
+          }
+         
+      
+        }
+        
+    
+    </style>
+    
+    
+<body>
+     <header>
+    <div class="logo">
+      <img src="coding/logo.png" alt="Logo">
+      <h1>Gift.AI</h1>
+    </div>
+    <nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+      <ul>
+        <li>  <a href="#">Home </a></li> 
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact Us</a></li>
+          <li><a href="#">WishList</a></li>
+      </ul>
+    </nav>
+  </header> 
+    
+    <h1> Gifts Recommendation</h1>
+    
+     <div class="gift1">
+     
+         <img src="coding/earbuds.jpg", width="250px", height="200px">
+        <h3>Ear Buds</h3>
+        <label for="Price">Price:999Rs.</label>
+        <button type="button" id="buyNow">Buy Now</button>
+      </div>
+          
+          <br>
+            
+        <div class="gift2">
+     <img src="coding/bluetooth%20speaker.jpg",  width="250px", height="200px" >
+        <h3>Bluetooth Speaker</h3>
+        <label for="Price">Price:2499Rs.</label>
+        <button type="button" id="buyNow">Buy Now</button>
+        </div>
+          
+          <br>
+        
+    <div class="gift3">
+         <img src="coding/watch.jpg", width="250px", height="200px">
+        <h3>Digital Watch</h3>
+        <label for="Price">Price:949Rs.</label>
+        <button type="button" id="buyNow">Buy Now</button>
+        </div>
+          
+      <br> 
+        
+        <div class="gift4">
+            
+        
+         <img src="coding/car.png", width="250px", height="200px">
+        <h3>Toy Car</h3><br>
+        <label for="Price">Price:199Rs.</label>
+        <button type="button" id="buyNow">Buy Now</button>
+            </div> 
+            
+            <br>
+    
+        <div class="gift5">
+         <img src="coding/bottle.png", width="250px", height="200px">
+        <h3>Bottle</h3>
+        <label for="Price">Price:1490Rs.</label>
+        <button type="button" id="buyNow">Buy Now</button>
+            
+            
+            </div>
+        
+    <br>
+            
+        <div class="gift6">
+         <img src="coding/sunglasses.png", width="250px", height="200px">
+        <h3>Sunglasses</h3>
+        <label for="Price">Price:249Rs.</label>
+        <button type="button" id="buyNow">Buy Now</button>
+           
+              
+          
+         </div>
+    
+    
+    
+    <!--<div id="displayedDetails"></div>
+    <h1 class="text-center my-4">Gift Guide - Results</h1>
+    <div class="detailscontainer">
+        <div class="row">
+            {% for gift in gifts %}
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-img-top" src="{{ gift.thumbnail }}" alt="{{ gift.title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ gift.title }}</h5>
+                        <p class="card-text">Price: {{ gift.price }}</p>
+                        <p class="card-text">Previous Price: {{ gift.old_price }}</p>
+                        <p class="card-text">Condition: {{ gift.second_hand_condition }}</p>
+                        <p class="card-text">Rating: {{ gift.rating }}</p>
+                        <p class="card-text">Reviews: {{ gift.reviews }}</p>
+                        <p class="card-text">Store Rating: {{ gift.store_rating }}</p>
+                        <p class="card-text">Store Reviews: {{ gift.store_reviews }}</p>
+                        <p class="card-text">Number of Comparisons: {{ gift.number_of_comparisons }}</p>
+                        <p class="card-text">Description: {{ gift.snippet }}</p>
+                        <a href="{{ gift.link }}" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>-->
+
+
+    <script src="Gift Recommendation.js"></script>
+</body>
+</html>
