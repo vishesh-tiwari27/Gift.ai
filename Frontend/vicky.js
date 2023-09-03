@@ -47,7 +47,7 @@ giftForm.addEventListener("submit", function(event) {
     // Add a click event listener to the button
     button.addEventListener('click', function() {
         // Define the URL of the HTML page you want to open
-        var pageURL = ('file:///C:/Users/91735/Desktop/giftRecommendation.html');
+        var pageURL = ('file:///C:/Users/91735/Desktop/Gift.ai/Frontend/giftRecommendation.html');
         
         // Open the HTML page in a new tab/window
         window.open(pageURL, '_blank');
